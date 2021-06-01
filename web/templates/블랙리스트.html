@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>블랙리스트</title>
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <!--블랙리스트 게시판을 만들기위한 js-->
+  <script language="javascript">
+    var temp = location.href.split("?");
+    data = temp[1].split(":");
+    blackName = {{black_name}};
+    blackReason = {{black_reason}};
+    blackDate = {{black_date}};
+  </script>
+  <script type="text/javascript" src="../lib/javascript.js"></script>
+
+  <style>
+  .btn {
+    width: 90px;
+    background-color: #ffad06;
+    border: none;
+    color:#000000;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    width: 110px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="메인메뉴.html"><strong>TAXI</strong></a>
+        </div>
+        
+    </div>
+</nav>
+
+  <!--신고게시판-->
+  <div class="row" style="margin-top: 25px;">
+    <div class="col-md-2"></div>
+    <div style="text-align: center;" class="col-md-8">
+      <Table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <td class="col-md-3">신고날짜</td>
+            <Td class="col-md-2">이 름</Td>
+            <Td class="col-md-7">신고사유</Td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-05-19</td>
+            <td>안상환</td>
+            <td>택시 탔는데 중간에 내리면서 돈먹고 튀었음 ㅡ_ㅡ;;</td>
+          </tr>
+          <!--게시판 생성 함수-->
+          <script>
+            {% for i in temp1 %}
+              {{i}}
+            {%endfor%}
+          </script>
+        </tbody>
+      </Table>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  
+  <!--신고란-->
+  <div class="row text-center">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-4"></div>
+        <button class="btn" onclick="location.href='신고하기.html'";>신고하기</button>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

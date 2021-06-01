@@ -1,0 +1,127 @@
+/* 전체 영역 통틀어 스타일 정의 */
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css); /*한나체*/
+* {
+    font-family: 'Hanna';
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 네비게이션 영역 */
+.navbar-default { /*배경색상*/
+    background-color:   #F0E68C; /*카키*/
+    border-color:   #EEE8AA; /* 팔레골덴로드*/
+}
+.navbar-default .navbar-brand { /*네비게이션 제목 색상*/
+    color: #000000; 
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus { /*네비게이션 제목에 마우스를 올렸을 때*/
+    background-color: transparent;
+    color: #708090;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { /*현재 선택된 네비게이션 색상 이벤트*/
+    color: white;
+    background-color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { /*네비게이션 글자에 마우스를 올렸을 때*/
+    color: #708090;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { /*드랍다운이 열렸을 때 마우스 색상 이벤트*/
+    color: #000000;
+    background-color:  #FFD700; /*골드*/
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a { /*네비게이션 기본 색상*/
+    color: #000000;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu >li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu >li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu >li > a:focus {
+        color:  #708090;
+    }
+}
+
+.btnRecruit {
+
+    width: 50px;
+    background-color: #ffad06;
+    border: none;
+    color:#000000;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    width: 100px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.sidenav { /*사이드바*/
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    background-color: #F0E68C;
+    overflow-x: hidden;
+    transition:0.5s ease-in-out;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+.sidenav a:hover, .offcanvas a:focus {
+    color: #000;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+.openmenu:hover {
+    color:#F0E68C;
+    transition:0.5s ease-in-out;
+}
+.openmenu {
+    font-size: 25px;
+    cursor:pointer;
+    transition:0.5s ease-in-out;
+}
+.openmenu > i {
+    font-size: 30px;
+}
+/* 미디어쿼리 적용 */
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top:15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

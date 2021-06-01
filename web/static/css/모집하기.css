@@ -1,0 +1,70 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 887px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 350px;
+        width: 700px;
+        margin: auto;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:#000;
+}
+
+h2{
+    text-align: center;
+    font-size: 100px;
+}
+
+form{
+    top: 0px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+input {
+    width:200px;
+    height: 40px;
+    font-size:30px;
+  }
+
+  select {
+    width:200px;
+    height: 40px;
+    font-size:20px;
+  }
+
+
+.btnCompletion {
+    width: 90px;
+    background-color: #ffad06;
+    border: none;
+    color:#000000;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 35px;
+    width: 200px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius:10px;
+}
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>모집관리</title>
+    <link rel="stylesheet" href="../static/css/모집관리.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <p>모집관리 페이지</p>
+    </nav>
+    
+    <p>다른 사용자가 참여하기를 기다리는 중...</p>
+    <div class="row text-center">
+        <button class="btn"><a href="메인메뉴.html">모집 종료!</a></button>
+    </div>
+    
+    <!--뒤로가기 방지를 위한 js-->
+    <script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function(event) {
+        history.go(1);
+    };
+    </script>
+    <script type="text/javascript" src="../lib/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>참여중</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <style>
+        .btn {
+          width: 90px;
+          background-color: #ffad06;
+          border: none;
+          color:#000000;
+          padding: 15px 0;
+          text-align: center;
+          text-decoration: none;
+          display: block;
+          font-size: 20px;
+          width: 100px; 
+          margin: 0 auto;
+          margin-top: 20px;
+          cursor: pointer;
+          border-radius:10px;
+      } 
+      
+        h1{
+        text-align: center;
+        font-size: 50px;
+        }
+      
+      </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default"></nav>
+    </nav>
+    <h1 style="text-align: center;">참여 대기방</h1>
+
+    <div style="text-align: center;">
+        <button class="btn" ><a href="메인메뉴.html">참여 종료!</a></button>
+    </div>
+    
+    <!--뒤로가기 방지를 위한 js-->
+    <script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function(event) {
+        history.go(1);
+    };
+    </script>
+    <script type="text/javascript" src="../lib/javascript.js"></script>
+</body>
+</html>

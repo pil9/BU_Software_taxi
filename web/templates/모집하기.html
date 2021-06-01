@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>모집하기</title>
+        <link rel="stylesheet" href="../static/css/모집하기.css">
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>   
+        <script type="text/javascript" src="{{ url_for('static', filename='js/javascript.js') }}"></script>
+        <!--구글맵API 링크-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="메인메뉴.html"><strong>TAXI</strong></a>
+                </div>
+            </div>
+        </nav>
+        
+        <hr>
+        <div class="row">
+            <h2>동승자 모집을 위한 페이지 입니다.</h2>
+
+            <!--구글맵 창-->
+            <div id="map"></div>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key={{apikey}}&callback=initMap&libraries=&v=weekly"async>
+            </script>
+             
+            <form id="reqruitInfo" action="#" method="POST">
+                다음 정보를 입력해 주세요<br/>
+                본인 이름: <input type="text" name="name" size="10"><br/>
+                출발지: <input type="text" name="departure" placeholder="기타 출발지 입력" size="20"><br/>
+                도착지: <input type="text" name="destination" placeholder="기타 도착지 입력" size="20"><br/>
+                모집 마감 시간: <input type="datetime-local" name="timeout">
+                <button type="submit" class="btnCompletion" >모집시작</button>
+            </form>
+        </div>
+        <hr>
+        
+        <footer style="background-color: #F0E68C; color: #EEE8AA">
+            <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-sm-8" style="text-align: left;">
+                        <h3>소프트웨어공학 3조</h3>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>프론트 담당</h4>
+                        <p>박태준<br>송승현<br>정효현</p>
+                        <br><br>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>백엔드 담당</h4>
+                        <p>이정필<br>이인수</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

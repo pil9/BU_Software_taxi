@@ -1,0 +1,63 @@
+
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+* {
+    font-family: 'Nanum Gothic Coding', serif;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.btn {
+
+    width: 50px;
+    background-color: #ffad06;
+    border: none;
+    color:#000000;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-weight:bold;
+    width: 100px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.box01{
+    background: url(https://cdn.pixabay.com/photo/2015/04/20/13/28/taxi-731334_960_720.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.box01 h1{
+    color: #FFFFF0;
+    text-shadow: -2px 0 #000, 0 4px #000, 4px 0 #000, 0 -2px #000;
+    text-align: center;
+    font-size: 100px;
+    line-height: 300px;
+}
+
+.box01 p{
+    color: #fff;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    text-align: center;
+    font-size: 30px;
+}
